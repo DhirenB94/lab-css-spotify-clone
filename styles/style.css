@@ -1,13 +1,109 @@
-/*
-Colors:
+.body {
+    font-family: "Arial, Helvetica", sans-serif;
+    margin: 0;
+    padding: 0;
+} /* For some reason font family when applied to the body tag doesnt work,
+    so I had to put it in each section. Have left it above however.*/
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+.logo{
+    height:60px;
+    width: auto;
+    margin-top: 5px;
+}
 
-*/
+.header {
+    display: flex;
+    justify-content:space-between;
+    font-family: "Arial, Helvetica", sans-serif;
 
+}
+.navbar{
+    padding-right: 15px;
+    font-size: 25px;
+}
 
-body {
-    background-color: red;
+.logo:hover {
+    animation: rotate;
+    animation-duration: 3s;
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.section-1{
+    text-align: center;
+    height: 500px;
+    background-image: url("../images/landing.jpg");
+    background-size: contain;
+    color: white;
+    padding-top: 180px;
+    font-size: 50px;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+
+.small-images {
+    height: 80px;
+    width: auto;
+}
+.section-2 {
+    text-align: center;
+    height: 375px;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.container h3{
+    color: #00B172;
+}
+.box {
+    margin: 40px 0px;
+    width: 23%;
+    font-size: 21px;
+    color: #1A1A1A;
+    height: 250px;
+}
+
+.section-3 {
+    background-color:#00B172;
+    border: solid;
+    font-family: "Arial, Helvetica", sans-serif;
+}
+
+.white-logo {
+    height: 100px;
+    width: auto;
+    border: solid;
+}
+.kanye {
+    height: 500px;
+    width: auto;
+    border: solid;
+}
+
+.section-3 {
+    color: white;
+    margin: 0px 20px;
+}
+.section-3 > h2 {
+    margin-left: 140px;
+    font-size: 35px;
+}
+.container-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-text {
+    font-size: large;
+}
+
+.image-logo{
+    padding-top: 220px;
 }
